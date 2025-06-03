@@ -6,7 +6,7 @@
 экскурсий и различных мероприятий.
 Сайт адаптирован под все устройства.
 
-Демо: GitHub Pages 
+Демо: GitHub Pages https://ksufanka91.github.io/yachts/
 
 ## Технологии
 
