@@ -1,0 +1,30 @@
+:root {
+    /* Основные цвета */
+    --color-primary: #d99e63; /* Основной брендовый цвет */
+    --color-secondary: #132027; /* Второстепенный цвет (фиолетовый) */
+    //--color-accent: #f59e0b;        /* Акцентный цвет (оранжевый) */
+
+    /* Текст */
+    --color-text: #132027; /* Основной цвет текста */
+    --color-text-light: #ffffff; /* Второстепенный текст */
+    --color-text-headers: #2c4e59; /* Текст на темном фоне */
+
+    /* Фоны */
+    --color-bg: #2c4e59; /* Основной фон */
+    //--color-bg-secondary: #f3f4f6;  /* Второстепенный фон */
+    --color-bg-dark: #16333f; /* Темный фон */
+
+    /* Границы */
+    --color-border: #e5e7eb; /* Цвет границ */
+    --color-border-dark: #d1d5db; /* Темные границы */
+
+    /* Состояния */
+    --color-success: #10b981; /* Успех (зеленый) */
+    --color-warning: #f59e0b; /* Предупреждение (желтый) */
+    --color-error: #ef4444; /* Ошибка (красный) */
+    --color-info: #3b82f6; /* Информация (синий) */
+
+    /* Шрифты */
+    --main-font: 'Lato', sans-serif;
+    --second-family: 'Prosto One', sans-serif;
+}
