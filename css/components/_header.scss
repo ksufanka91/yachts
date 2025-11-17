@@ -72,6 +72,10 @@
             margin-left: 8px;
             vertical-align: middle;
         }
+
+        @media (min-width: 768px) {
+            font-size: 0.9rem;
+        }
     }
 
     &__nav {
@@ -84,6 +88,10 @@
             &:last-child {
                 color: var(--color-primary);
                 margin-right: 0;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 0.9rem;
             }
         }
     }
@@ -102,8 +110,11 @@
         &:last-child {
             background-color: transparent;
         }
-    }
 
+        &_desktop {
+            color: var(--color-text-light);
+        }
+    }
 
     &__icon_wa {
         background-repeat: no-repeat;
@@ -124,6 +135,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("../../img/icons/menu-burger.svg");
+        cursor: pointer;
     }
 
 
@@ -131,6 +143,16 @@
         display: flex;
         gap: 10px;
         align-items: center;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        &_desktop {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
     }
 }
 

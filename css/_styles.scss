@@ -32,6 +32,11 @@ a {
 
 button {
     cursor: pointer;
+    padding: 14px;
+    border: none;
+    background-color: var(--color-bg);
+    color: var(--color-text-light);
+    text-align: center;
 }
 
 .container {

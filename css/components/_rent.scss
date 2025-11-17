@@ -78,9 +78,6 @@
 
     &__button {
         width: 100%;
-        padding: 14px;
-        background: var(--color-bg-dark);
-        color: var(--color-text-light);
 
         @media (min-width: 768px) {
             width: fit-content;
