@@ -1,0 +1,116 @@
+.contacts {
+    margin-bottom: 5rem;
+
+    &__blocks {
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__block {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        &-title {
+            font-family: var(--second-family), sans-serif;
+            line-height: 1.5;
+            color: var(--color-text-headers);
+            margin-bottom: 1rem;
+        }
+
+        &-text {
+            font-weight: 300;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @media (min-width: 768px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__field {
+        margin-bottom: 1rem;
+
+        &-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__checkbox {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    &__label {
+        display: block;
+        color: #333;
+
+        &-checkbox {
+            font-size: 0.8rem;
+            cursor: pointer;
+
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    &__form-button {
+        width: 100%;
+        padding: 12px;
+        background-color: var(--color-bg);
+        color: var(--color-text-light);
+        border: none;
+        
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+    }
+}

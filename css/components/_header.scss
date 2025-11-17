@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 10;
     padding: 0;
     font-family: 'Prosto One', sans-serif;
 
@@ -108,13 +108,13 @@
     &__icon_wa {
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../../img/wa-icon.svg");
+        background-image: url("../../img/icons/wa-icon.svg");
     }
 
     &__icon_phone {
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../../img/phone-icon.svg");
+        background-image: url("../../img/icons/phone-icon.svg");
         font-size: 0;
     }
 
@@ -123,7 +123,7 @@
         height: 32px;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../../img/menu-burger.svg");
+        background-image: url("../../img/icons/menu-burger.svg");
     }
 
 
@@ -135,7 +135,7 @@
 }
 
 .js-mobile-button.active {
-    background-image: url("../../img/menu-button-close.svg");
+    background-image: url("../../img/icons/menu-button-close.svg");
     background-repeat: no-repeat;
     background-position: center;
 }

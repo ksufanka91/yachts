@@ -1,0 +1,146 @@
+.routes {
+    margin-bottom: 5rem;
+
+    &__main-title {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__vehicles {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__vehicle {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: #004D59;
+            opacity: 0.2;
+            right: -30px;
+        }
+
+        &:last-child:after {
+            width: 0;
+        }
+
+        &-text {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__tabs-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        scrollbar-width: none;
+        margin-bottom: 15px;
+    }
+
+    &__tabs-scroll {
+        display: inline-flex;
+        gap: 8px;
+    }
+
+    &__tab-btn {
+        padding: 12px 20px;
+        background: #f5f5f5;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+
+    &__tab-btn.active {
+        color: var(--color-primary);
+    }
+
+    &__tab-content {
+        display: none;
+        margin-left: -16px;
+        margin-right: -16px;
+        width: calc(100% + 32px);
+    }
+
+    &__tab-content.active {
+        display: block;
+
+        @media (min-width: 1300px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__img {
+        min-height: 220px;
+        object-fit: cover;
+
+        @media (min-width: 1300px) {
+            min-height: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__info {
+        background: url("../../img/route-bg-mob.jpg") no-repeat;
+        background-size: cover;
+        padding: 2rem 1rem;
+    }
+
+    &__title {
+        font-family: var(--second-family), sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        color: var(--color-text-light);
+        margin-bottom: 2rem;
+    }
+
+    &__route {
+        font-weight: 300;
+        line-height: 1.50;
+        color: var(--color-text-light);
+        margin-bottom: 2rem;
+    }
+
+    &__duration {
+        font-weight: 300;
+        color: var(--color-text-light);
+        margin-bottom: 1rem;
+    }
+
+    &__price {
+        font-weight: 300;
+        color: var(--color-text-light);
+        margin-bottom: 2rem;
+
+        & span {
+            color: var(--color-primary)
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        background: var(--color-bg-primary);
+        color: var(--color-text-light);
+
+        @media (min-width: 1300px) {
+            width: 50%;
+        }
+    }
+}

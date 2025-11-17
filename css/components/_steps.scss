@@ -1,0 +1,89 @@
+.steps {
+    margin-bottom: 5rem;
+
+    &__main-title {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &-item {
+            position: relative;
+
+            //&:first-child:after {
+            //    content: '';
+            //    position: absolute;
+            //    border-top: 1px solid #fff;
+            //    left: 0;
+            //    bottom: 73px;
+            //    height: 1px;
+            //    width: calc(calc(100% - 50%) - 10px);
+            //    z-index: 0;
+            //}
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        height: 100px;
+        transition: 0.2s;
+        padding-bottom: 2rem;
+        transform: scale(0.6);
+
+        &-phone {
+            background: url("../../img/icons/step-1.svg") no-repeat center;
+            background-size: contain;
+            padding-bottom: 0.8rem;
+        }
+
+        &-manager {
+            background: url("../../img/icons/step-2.svg") no-repeat center;
+            background-size: contain;
+            padding-bottom: 0.8rem;
+        }
+
+        &-transport {
+            background: url("../../img/icons/step-3.svg") no-repeat center;
+            background-size: contain;
+            padding-bottom: 0.8rem;
+        }
+
+        &-pay {
+            background: url("../../img/icons/step-4.svg") no-repeat center;
+            background-size: contain;
+            padding-bottom: 0.8rem;
+        }
+
+        &-relax {
+            background: url("../../img/icons/step-5.svg") no-repeat center;
+            background-size: contain;
+            padding-bottom: 0.8rem;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        text-align: center;
+        border-top: 0.69px solid #CCDBDE;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: #2C4E59;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: url("../../img/icons/pagination.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+            top: -12%;
+        }
+
+        & p {
+            max-width: 240px;
+            margin-top: 1rem;
+        }
+    }
+}
