@@ -1,0 +1,63 @@
+.callback {
+    &__group {
+        margin-bottom: 20px;
+
+        & label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.checkbox__group {
+    margin-bottom: 20px;
+
+    & label {
+        display: flex;
+        align-items: flex-start;
+        font-weight: normal;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+
+    & input {
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    & a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.submit__btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--color-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background: var(--color-bg-dark);
+    }
+
+    &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+}

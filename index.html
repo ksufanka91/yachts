@@ -43,7 +43,7 @@
 
                 <div class="header__contacts_desktop">
                     <a href="tel:+79037678373" class="header__link_desktop">8 (903) 767-83-73</a>
-                    <button class="button header__button">Заказать звонок</button>
+                    <button class="button header__button js-popup-open-btn" data-target="#popup-callback">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -59,6 +59,37 @@
             </div>
         </div>
     </div>
+
+
+    <div class="popup js-popup" id="popup-callback">
+        <div class="popup__inner">
+            <button class="popup__inner-close js-close-btn" id="popupClose">&times;</button>
+
+            <h3>Оставить заявку</h3>
+
+            <form class="callback__form" id="contactForm">
+                <div class="callback__group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="user-name" name="name" required>
+                </div>
+
+                <div class="callback__group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="user-phone" name="phone" required>
+                </div>
+
+                <div class="checkbox__group">
+                    <label>
+                        <input type="checkbox" id="privacyPolicy" required>
+                        Cогласен с политикой конфиденциальности
+                    </label>
+                </div>
+
+                <button type="submit" class="submit__btn" id="submitBtn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
 </header>
 
 <div class="first-screen">
@@ -630,8 +661,10 @@
                             За какой срок необходимо бронировать?
                         </div>
                         <div class="faq__answer">
-                            Арендовать катер или яхту в Санкт-Петербурге можно даже за 15 минут до поездки, при условии, что
-                            есть свободные яхты. Поэтому рекомендуем бронировать заранее, чтобы подходящая яхта досталась
+                            Арендовать катер или яхту в Санкт-Петербурге можно даже за 15 минут до поездки, при условии,
+                            что
+                            есть свободные яхты. Поэтому рекомендуем бронировать заранее, чтобы подходящая яхта
+                            досталась
                             именно вам в желаемую дату.
                         </div>
                     </li>
@@ -811,5 +844,6 @@
 <script src="js/script.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/tabs.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
